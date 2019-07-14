@@ -1,0 +1,20 @@
+favicon : favicon.png
+menu:
+  - { name : 'About', path : 'pages', url : 'about.html' }
+
+disqus:
+  shortname : #XXXXX
+
+google:
+  analytics : #UA-XXXXXXXXX-1
+
+social:
+  - { icon : 'github',     url : 'https://github.com/ayltai' }
+  - { icon : 'linkedin',   url : 'https://www.linkedin.com/in/ayltai' }
+  - { icon : 'rss-square', url : '/feed.xml' }
+
+pagination:
+  previous : Older posts
+  next     : Newer posts
+
+post_date_prefix : Published on

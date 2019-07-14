@@ -1,0 +1,34 @@
+---
+layout : default
+---
+{% for post in paginator.posts %}
+<div class="posts">
+    <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+    {% if post.subtitle %}
+    <h6>{{ post.subtitle }}</h6>
+    {% endif %}
+    {% if post.image %}
+    <div class="thumbnail-container">
+        <a href="{{ post.url | relative_url }}"><img src="{{ site.baseurl }}/assets/img/{{ post.image }}" alt="{{ post.title }}"></a>
+    </div>
+    {% endif %}
+    <p>
+        {{ post.content | strip_html | truncate: 350 }} <a href="{{ post.url | relative_url }}">Read more</a>
+        <span class="post-date">
+            <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %}
+        </span>
+    </p>
+</div>
+{% endfor %}
+<div class="pagination">
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-button pagination-active next">{{ site.data.settings.pagination.previous }}</a>
+    {% else %}
+    <span class="pagination-button">{{ site.data.settings.pagination.previous }}</span>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-button pagination-active">{{ site.data.settings.pagination.next }}</a>
+    {% else %}
+    <span class="pagination-button">{{ site.data.settings.pagination.next }}</span>
+    {% endif %}
+</div>

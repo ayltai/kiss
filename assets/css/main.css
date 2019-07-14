@@ -1,0 +1,409 @@
+/* Global */
+
+body {
+    font-family : 'Merriweather', serif;
+    font-size   : 18px;
+    line-height : 1.75rem;
+    color       : #515151;
+}
+
+@media (max-width : 30em) {
+    body {
+        font-size   : 14px;
+        line-height : 1.58rem;
+    }
+
+    body h1 {
+        font-size : 1.5rem;
+    }
+}
+
+h1 {
+    font-size : 2rem;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration : none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family : 'Fira Sans', sans-serif;
+    color       : #333
+}
+
+h1 {
+    font-size : 28px;
+}
+
+h2 {
+    font-size : 26px;
+}
+
+h3 {
+    font-size : 24px;
+}
+
+h4 {
+    font-size : 20px;
+}
+
+h5 {
+    font-size : 18px;
+}
+
+h6 {
+    color       : #999;
+    font-size   : 16px;
+    font-weight : normal;
+    font-style  : italic;
+    margin-top  : -0.8rem;
+}
+
+a {
+    text-decoration : underline;
+    color           : #333;
+}
+
+a:hover {
+    color         : #000;
+    border-bottom : none;
+}
+
+img {
+    max-width     : 100%;
+    height        : auto;
+    border-radius : 5px;
+}
+
+blockquote {
+    margin      : 10px 20px 10px;
+    padding     : 0px 15px;
+    border-left : 0.25em solid #ccc;
+    color       : #999;
+    line-height : 1.5;
+}
+
+hr {
+    border-top : 1px solid #ccc;
+}
+
+/* Containers */
+
+.container {
+    margin-left  : auto;
+    margin-right : auto;
+    width        : 615px;
+}
+
+@media (max-width : 768px) {
+    .container {
+        width : 90vw;
+    }
+}
+
+/* Masthead */
+
+.masthead {
+    padding-top    : 0.5rem;
+    padding-bottom : 0.5rem;
+    margin-bottom  : 4rem;
+    font-family    : 'Fira Sans', sans-serif;
+}
+
+.masthead a:hover {
+    color : #000;
+}
+
+.masthead-title a {
+    text-decoration : none;
+    color           : #505050;
+}
+
+/* Thumbnails */
+
+.thumbnail-container {
+    max-width     : 100%;
+    overflow      : hidden;
+    border-radius : 5px;
+    margin-bottom : 25px;
+}
+
+.thumbnail-container img {
+    margin-top    : -11.5%;
+    margin-bottom : -11.5%;
+}
+
+/* Posts */
+
+.post-container {
+    margin-bottom : 4rem;
+}
+
+.posts {
+    margin-bottom : 5rem;
+    padding       : 0px;
+    list-style    : none;
+}
+
+.post-date {
+    display       : block;
+    margin-top    : 3px;
+    margin-bottom : 1rem;
+    color         : #9a9a9a;
+    font-size     : 0.8rem;
+}
+
+@media (max-width : 30rem) {
+    .posts h1 {
+        font-size : 1.5rem;
+    }
+}
+
+/* Pagination */
+
+.pagination {
+    overflow    : hidden;
+    font-family : 'Fira Sans', sans-serif;
+    text-align  : center;
+}
+
+.pagination a {
+    text-decoration : none;
+}
+
+.pagination-button {
+    color       : #999;
+    border      : 1px solid #e0e0e0;
+    padding     : 12px 36px;
+    display     : inline-block;
+    font-size   : 16px;
+}
+
+.pagination-active {
+    color : #000;
+}
+
+.pagination-active:hover {
+    background-color : #e0e0e0;
+}
+
+/* Footer */
+
+.footer {
+    color      : #999;
+    text-align : center;
+    margin     : 2rem;
+}
+
+.footer a {
+    color           : #999;
+    padding         : 10px;
+    text-decoration : none;
+}
+
+.footer a:hover {
+    color : #333;
+}
+
+/* Menus */
+
+.menu {
+    padding-top : -0.5rem;
+    margin-top  : -1rem;
+    display     : block;
+}
+
+.menu-content {
+    float : left;
+}
+
+.menu-content a {
+    text-decoration : none;
+    color           : #999;
+    font-size       : 1rem;
+    padding-right   : 10px;
+}
+
+.social-icons {
+    float : right;
+}
+
+.social-icons a {
+    color     : #999;
+    font-size : 1rem;
+}
+
+@media (max-width : 30em) {
+    .menu-content {
+        margin-bottom : 5px;
+    }
+
+    .social-icons {
+        float       : left;
+        padding-top : 0px;
+    }
+}
+
+/* Code */
+
+code, pre {
+    font-family : 'Fira Mono', monospace;
+}
+
+code {
+    padding          : 0.25em 0.5em;
+    font-size        : 0.8rem;
+    background-color : #f5f5f5;
+    border-radius    : 3px;
+}
+
+pre {
+    display          : block;
+    margin-top       : 0;
+    margin-bottom    : 1rem;
+    padding          : 1rem;
+    font-size        : 0.8rem;
+    line-height      : 1.4;
+    white-space      : pre;
+    word-break       : break-all;
+    word-wrap        : break-word;
+    background-color : #f5f5f5;
+}
+
+pre code {
+    padding          : 0;
+    font-size        : 100%;
+    color            : inherit;
+    background-color : transparent;
+}
+
+pre.highlight {
+    white-space : pre;
+    overflow-x  : auto;
+}
+
+.highlight {
+    margin-bottom : 1rem;
+    border-radius : 4px;
+}
+
+.highlight pre {
+    margin-bottom : 0;
+}
+
+.gist .gist-file {
+    padding : 15px;
+}
+
+.gist .gist-file {
+    font-family : 'Fira Mono', monospace !important;
+}
+
+.gist .markdown-body {
+    padding : 15px;
+}
+
+.gist pre {
+    padding          : 0;
+    background-color : transparent;
+}
+
+.gist .gist-file .gist-data {
+    font-size   : 0.8rem !important;
+    line-height : 1.4;
+}
+
+.gist code {
+    padding          : 0;
+    color            : inherit;
+    background-color : transparent;
+    border-radius    : 0;
+}
+
+/* Tables */
+
+table {
+    border-collapse : collapse;
+    margin-bottom   : 30px;
+    width           : 100%;
+}
+
+table, th, td {
+    border : 1px solid #000;
+}
+
+th, td {
+    padding    : 15px;
+    text-align : left;
+}
+
+/* Social icons */
+
+.sharing-icons a {
+    padding-right : 10px;
+}
+
+.fa-twitter {
+    padding            : 5px;
+    transition         : 0.5s;
+    -o-transition      : 0.5s;
+    -ms-transition     : 0.5s;
+    -moz-transition    : 0.5s;
+    -webkit-transition : 0.5s;
+}
+
+.fa-twitter:hover {
+    color : #00aced;
+}
+
+.fa-github {
+    padding            : 5px;
+    transition         : 0.5s;
+    -o-transition      : 0.5s;
+    -ms-transition     : 0.5s;
+    -moz-transition    : 0.5s;
+    -webkit-transition : 0.5s;
+}
+
+.fa-github:hover {
+    color : #343434;
+}
+
+.fa-linkedin {
+    padding            : 5px;
+    transition         : 0.5s;
+    -o-transition      : 0.5s;
+    -ms-transition     : 0.5s;
+    -moz-transition    : 0.5s;
+    -webkit-transition : 0.5s;
+}
+
+.fa-linkedin:hover {
+    color : #0073a4;
+}
+
+.fa-facebook {
+    padding            : 5px;
+    transition         : 0.5s;
+    -o-transition      : 0.5s;
+    -ms-transition     : 0.5s;
+    -moz-transition    : 0.5s;
+    -webkit-transition : 0.5s;
+}
+
+.fa-facebook:hover {
+    color : #3d5b99;
+}
+
+.fa-rss-square {
+    padding            : 5px;
+    transition         : 0.5s;
+    -o-transition      : 0.5s;
+    -ms-transition     : 0.5s;
+    -moz-transition    : 0.5s;
+    -webkit-transition : 0.5s;
+}
+
+.fa-rss-square:hover {
+    color : #ff6600;
+}

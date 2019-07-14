@@ -1,0 +1,17 @@
+# Site settings
+title       : Kiss
+description : A minimalist Jekyll theme for personal blogs with KISS principle applied
+author      : Alan Tai
+
+# Page settings
+markdown      : kramdown
+highlighter   : rouge
+paginate      : 5
+paginate_path : page/:num
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji

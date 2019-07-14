@@ -1,0 +1,17 @@
+<section class="disqus">
+    <div id="disqus-thread">
+        <script type="text/javascript">
+            var disqus_shortname  = "{{ site.data.settings.disqus.shortname }}";
+            var disqus_identifier = "{{ page.url }}";
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.src   = '//' + disqus_shortname + '.disqus.com/embed.js';
+                dsq.type  = 'text/javascript';
+                dsq.async = true;
+                (document.getElementsByTagName('head')[0] || document.getElementsByName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus</a>.</noscript>
+        <a href="https://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
