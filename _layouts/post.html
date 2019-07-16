@@ -7,24 +7,7 @@ layout : default
 <img src="{{ site.baseurl }}/assets/img/{{ page.image }}">
 {% endif %}
 {{ content }}
-<span class="post-date">
-    {{ site.data.settings.post_date_prefix }}
-    {% assign date = page.date | date: "%-d" %}
-    {{ page.date | date: "%B" }}
-    {% case date %}
-    {% when '1' or '21' or '31' %}{{ date }}st
-    {% when '2' or '22' %}{{ date }}nd
-    {% when '3' or '23' %}{{ date }}rd
-    {% else %}{{ date }}th
-    {% endcase %}
-    {{ page.date | date: "%Y" }}
-    by
-    {% if page.author %}
-    {{ page.author }}
-    {% else %}
-    {{ site.author }}
-    {% endif %}
-</span>
+{% include meta.html post=page %}
 {% include sharing.html %}
 {% if site.data.settngs.disqus.shortname %}
 {% include disqus.html %}

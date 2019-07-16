@@ -78,13 +78,13 @@ img {
 blockquote {
     margin      : 10px 20px 10px;
     padding     : 0px 15px;
-    border-left : 0.25em solid #ccc;
-    color       : #999;
+    border-left : 0.25em solid #666;
+    color       : #212121;
     line-height : 1.5;
 }
 
 hr {
-    border-top : 1px solid #ccc;
+    border : 1px solid #ccc;
 }
 
 /* Containers */

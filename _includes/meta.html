@@ -1,0 +1,12 @@
+{% if include.post.author %}
+{% assign post_author = include.post.author %}
+{% else %}
+{% assign post_author = site.author %}
+{% endif %}
+{% for author in site.data.settings.authors %}
+{% if author.name == post_author %}
+<span class="post-date">
+    <i class="fa fa-calendar" aria-hidden="true"></i> {{ site.data.settings.post_date_prefix }} {{ include.post.date | date_to_string }} by <a href="{{ author.url }}" target="_blank">{{ author.name }}</a>
+</span>
+{% endif %}
+{% endfor %}

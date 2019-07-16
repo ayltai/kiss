@@ -14,9 +14,7 @@ layout : default
     {% endif %}
     <p>
         {{ post.content | strip_html | truncate: 350 }} <a href="{{ post.url | relative_url }}">Read more</a>
-        <span class="post-date">
-            <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %}
-        </span>
+        {% include meta.html post=post %}
     </p>
 </div>
 {% endfor %}

@@ -6,7 +6,6 @@ title      : A quest to hire great software engineers
 subtitle   : You have to kiss a lot of frogs before you find your prince
 image      : posts/2019/06/30/frog.jpg
 categories : Interview
-tags       : [Hiring, Recruitment, Interview, Zuhlke, Software Engineer]
 ---
 If hiring software engineers is no easy task, hiring great ones is nearly impossible. I’d rather kiss all the frogs in a pond to find the prince, if only it were that simple to hire!
 
