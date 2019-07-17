@@ -1,5 +1,10 @@
 # Kiss
 
+[![PageSpeed(Desktop)](https://img.shields.io/badge/PageSpeed%20(Desktop)-100-success.svg?style=for-the-badge)](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fayltai.github.io%2Fkiss&tab=desktop)
+[![PageSpeed (Mobile)](https://img.shields.io/badge/PageSpeed%20(Mobile)-98-success.svg?style=for-the-badge)](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fayltai.github.io%2Fkiss&tab=mobile)
+![Release](https://img.shields.io/github/release/ayltai/kiss.svg?style=for-the-badge)
+![License](https://img.shields.io/github/license/ayltai/kiss.svg?style=for-the-badge)
+
 Kiss is a minimalist Jekyll theme for personal blogs with [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) applied.
 
 [View demo website](https://ayltai.github.io/kiss)
