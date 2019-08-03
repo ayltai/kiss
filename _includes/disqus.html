@@ -1,8 +1,10 @@
 <section class="disqus">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-        this.page.url        = "{{ page.url }}";
-        this.page.identifier = "{{ page.url }}";
+        var disqus_config = function() {
+            this.page.url        = "{{ page.url }}";
+            this.page.identifier = "{{ page.url }}";
+        };
         
         (function() {
             var dsq = document.createElement('script');
