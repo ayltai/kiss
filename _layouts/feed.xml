@@ -18,8 +18,8 @@
                 <title>{{ post.title | xml_escape }}</title>
                 <description>{{ post.content | xml_escape }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-                <link>{{ post.url | absolute_url }}</link>
-                <guid isPermaLink="false">{{ post.url | relative_url }}</guid>
+                <link>{{ post.url }}</link>
+                <guid isPermaLink="false">{{ post.url }}</guid>
             </item>
             {% endfor %}
     </channel>
