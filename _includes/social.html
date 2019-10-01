@@ -3,6 +3,6 @@
 {% if first == '/' %}
 <a href="{{ site.baseurl }}{{ item.url }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
 {% else %}
-<a href="{{ item.url }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
 {% endif %}
 {% endfor %}
